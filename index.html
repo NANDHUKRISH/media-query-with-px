@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Screen Size: <span id="Span"></span>px</h2>
+    <div>
+        <h1 class="type-1">Small mob</h1>
+        <h1 class="type-2">mob device</h1>
+        <h1 class="type-3">tab device</h1>
+        <h1 class="type-4">laptop</h1>
+        <h1 class="type-5">xl device</h1>
+    </div>
+    <img class="image"src="https://getwallpapers.com/wallpaper/full/f/1/3/655629.jpg" alt="img">
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ab dolorem debitis, consequuntur quaerat ipsum dolore ut voluptate, expedita veniam natus rem maxime esse ratione assumenda qui tempora rerum suscipit.
+    Quo, inventore voluptas earum fugit vitae provident molestias vel aliquam amet illo fugiat. Accusantium commodi at, adipisci velit voluptatem ut officia obcaecati consequatur, ab, debitis cum odit voluptates tempora officiis?
+    Magni quis officia ullam nihil eligendi, porro nulla dicta, aperiam adipisci corporis unde soluta obcaecati nesciunt harum nisi autem voluptatibus? Dolor quos veritatis ducimus deleniti minima est iure tempore blanditiis.
+    Error quibusdam ullam accusantium eaque quod obcaecati ut, eligendi molestias perspiciatis fugiat sit id nam sapiente praesentium neque corrupti, exercitationem adipisci laborum debitis explicabo perferendis velit. Maxime ex atque totam.
+    Delectus, id labore laudantium molestiae omnis, quos neque ducimus enim eaque praesentium odit, dolore ipsum ullam? Praesentium doloremque accusamus quidem aperiam illo repellat sit est unde, itaque quo, saepe ipsam.</p>
+    <script>
+        window.addEventListener('resize',function(){
+            let screenSize=window.innerWidth;
+            console.log(screenSize);
+            document.querySelector('#Span').textContent=screenSize;
+        })
+    </script>
+</body>
+</html>
